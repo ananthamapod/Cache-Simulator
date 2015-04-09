@@ -11,6 +11,7 @@ Usage:
   <code>sim \<cache size\> \<associativity\> \<block size\> \<replacement algorithm\> \<write policy\> \<tracefile.txt\></code>
 
 More information about arguments:
+
   <code>\<cache size\></code>:
     must be a power of 2 integer represented in decimal(base 10)
     
