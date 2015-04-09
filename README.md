@@ -15,9 +15,9 @@ More information about arguments:
     must be a power of 2 integer represented in decimal(base 10)
     
   <code>\<associativity\></code>:
-    <pre>-direct</pre>  - simulates of a direct-mapped cache
+    <pre>-direct  - simulates of a direct-mapped cache</pre>
     
-    <pre>-assoc:n</pre> - simulates an n-way associative cache where n is an integer that is a power of 2
+    <pre>-assoc:n - simulates an n-way associative cache where n is an integer that is a power of 2</pre>
   
   <code>\<block size\></code>:
     must be a power of 2 integer represented in decimal(base 10)
