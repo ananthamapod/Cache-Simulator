@@ -8,23 +8,27 @@ Note: Although the help function suggests n-associative caches are supported, th
 Moreover, the only replacement strategy currently implemented is the First-In-First-Out (FIFO) strategy, although the intention is to support Least-Recently-Used (LRU) replacement as well in the future.
 
 Usage:
-  sim <cache size> <associativity> <block size> <replacement algorithm> <write policy> <tracefile.txt>
+  <code>sim \<cache size\> \<associativity\> \<block size\> \<replacement algorithm\> \<write policy\> \<tracefile.txt\></code>
 
 More information about arguments:
-  <cache size>:
+  <code>\<cache size\></code>:
     must be a power of 2 integer represented in decimal(base 10)
     
-  <associativity>:
-    -direct - simulates of a direct-mapped cache
-    -assoc:n - simulates an n-way associative cache where n is an integer that is a power of 2
-  <block size>:
+  <code>\<associativity\></code>:
+    <pre>-direct - simulates of a direct-mapped cache</pre>
+    <pre>-assoc:n - simulates an n-way associative cache where n is an integer that is a power of 2</pre>
+  
+  <code>\<block size\></code>:
     must be a power of 2 integer represented in decimal(base 10)
-  <replacement algorithm>:
-    -FIFO - simulates first-in-first-out replacement
-    -LRU - simulates least-recently-used replacement
-  <write policy>:
+    
+  <code>\<replacement algorithm\></code>:
+    <pre>-FIFO - simulates first-in-first-out replacement</pre>
+    <pre>-LRU - simulates least-recently-used replacement</pre>
+    
+  <code>\<write policy\></code>:
     -wt - simulates a write-through cache
-  <tracefile>:
+    
+  <code>\<tracefile\></code>:
     Must be a text file with the memory access trace of a program.
     Each line in the file must be formatted as follows:
-          'instruction pointer value'':'<space>'W or R signifying read or write'<space>'memory address accessed'
+          'instruction pointer value'':'\<space\>'W or R signifying read or write'\<space\>'memory address accessed'
